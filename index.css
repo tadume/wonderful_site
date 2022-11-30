@@ -1,3 +1,52 @@
+@media screen and (max-width: 960px) {
+  body .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .header #iphone {
+    display: none;
+  }
+  body .header #pc {
+    width: 40px;
+    height: 35px;
+    margin-right: 100px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  body .header #pc .icon {
+    display: block;
+    height: 3px;
+    margin-bottom: 8px;
+    background-color: rgb(79, 77, 77);
+  }
+  body .header #pc:hover {
+    background-color: rgb(184, 178, 178);
+  }
+  body .top {
+    width: 570px;
+    margin: 150px auto;
+    font-size: 30px;
+  }
+  body tr {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  body tr p {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 961px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  .top {
+    padding: 150px 0 0;
+    width: 700px;
+    margin: 0 auto;
+  }
+}
 body {
   font-size: 25px;
   background-image: url(https://wonderful-wife.net/wp-content/themes/agent_tcd033/img/w_code/head_bg.jpg);
@@ -10,11 +59,9 @@ body a {
   text-decoration: none;
 }
 body .header {
-  display: flex;
   position: fixed;
   top: 0;
   left: 0;
-  justify-content: center;
   padding: 30px;
   background-color: rgba(250, 250, 250, 0.85);
   width: 100%;
@@ -77,12 +124,7 @@ body .header .question:hover span {
     left: 0px;
   }
 }
-body .top {
-  padding: 150px 0 0;
-  width: 50%;
-  margin: 0 auto;
-}
-body .top .application {
+body .application {
   background-color: white;
   border-radius: 20px;
   border: black 7px solid;
@@ -90,29 +132,29 @@ body .top .application {
   line-height: 1.5;
   padding-bottom: 24px;
 }
-body .top .application h1 {
+body .application h1 {
   margin-bottom: 0;
 }
-body .top .application small {
+body .application small {
   position: relative;
   top: -20px;
   font-size: 16px;
   letter-spacing: 0.5px;
 }
-body .top .application strong {
+body .application strong {
   background: linear-gradient(to bottom, white 50%, yellow);
 }
-body .top .application .small {
+body .application .small {
   font-size: 13px;
 }
-body .top .application .form {
+body .application .form {
   background-color: rgba(35, 167, 238, 0.777);
   width: 500px;
   margin: 0 auto;
   border-radius: 10px;
   padding: 10px 0;
 }
-body .top .application .form a {
+body .application .form a {
   color: white;
   font-size: 16px;
 }
@@ -123,7 +165,10 @@ body .black .mark {
   margin: 0 auto;
   margin-top: 20px;
 }
-body .black .mark td {
+body .black .mark tr {
+  display: flex;
+}
+body .black .mark tr td {
   font-size: 20px;
   text-align: center;
 }
